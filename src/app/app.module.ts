@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { UIRouterModule } from '@uirouter/angular';
 import {APP_STATES} from './app.states';
 import { UserComponent } from './components/user/user.component';
+import { UsersComponent } from './components/users/users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent
+    UserComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
