@@ -9,9 +9,8 @@ import {User} from '../../models/user';
 export class UsersComponent implements OnInit {
   @Input() users: Array<User> = [];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
-    console.log(this.users);
   }
 }

@@ -9,12 +9,14 @@ import { UserComponent } from './components/user/user.component';
 import { UsersComponent } from './components/users/users.component';
 import {HttpClientModule} from '@angular/common/http';
 import {UsersService} from './services/users.service';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    UsersComponent
+    UsersComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

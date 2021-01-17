@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnDestroy, OnInit} from '@angular/core';
+import {User} from '../../models/user';
+import {StateService} from '@uirouter/core';
 
 @Component({
   selector: 'app-user',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserComponent implements OnInit {
 
-  constructor() { }
+  @Input() user: User | undefined;
+  constructor(public stateService: StateService) {  }
 
   ngOnInit(): void {
+    if (!this.user) {
+      this.stateService.go('not-found');
+    }
   }
-
 }

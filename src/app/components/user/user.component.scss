@@ -1,0 +1,22 @@
+.user-info {
+  margin: 25px auto;
+  width: 300px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+  &__title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  &__box {
+    padding: 12px 15px;
+
+    &-detail {
+      display: flex;
+
+      div {
+        width: 50%;
+      }
+    }
+  }
+}
