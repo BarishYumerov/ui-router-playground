@@ -1,1 +1,23 @@
-<p>users works!</p>
+<div class="users-list">
+    <h2 class="users-list__title">Users</h2>
+    <table class="users-list__table">
+        <thead>
+            <tr class="users-list__table-item users-list__table-item--head">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="users-list__table-item" *ngFor="let user of users ">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.age}}</td>
+                <td>
+                    <a uiSref="user" [uiParams]="{ id: user.id }">View</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
